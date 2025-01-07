@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Do_Hyeon } from "next/font/google";
 import "./globals.css";
 import "./styles/style.css";
 import { css } from "../../styled-system/css";
+import { stack } from "../../styled-system/patterns/stack.mjs";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Do_Hyeon({ subsets: ["latin"], weight: "400", display: "swap" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className={css({ bg: "red.400" })}>asd{children}</div>
+        <main className={stack({ gap: "6", padding: "4" })}>{children}</main>
       </body>
     </html>
   );

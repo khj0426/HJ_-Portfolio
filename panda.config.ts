@@ -1,4 +1,15 @@
-import { defineConfig } from "@pandacss/dev";
+import { defineConfig, defineGlobalStyles } from "@pandacss/dev";
+
+const globalCSS = defineGlobalStyles({
+  "html,body": {
+    boxSizing: "border-box",
+    minHeight: "100vh",
+    backgroundColor: "rgb(15,24,42);",
+    paddingLeft: "2.5",
+    paddingRight: "2.5",
+    color: "gray.400",
+  },
+});
 
 export default defineConfig({
   // Whether to use css reset
@@ -17,4 +28,5 @@ export default defineConfig({
 
   // The output directory for your css system
   outdir: "styled-system",
+  globalCss: globalCSS,
 });

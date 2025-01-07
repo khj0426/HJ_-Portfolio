@@ -1,5 +1,4 @@
-import Image from 'next/image';
-
+import { MainSection } from "@/components/main-section";
 export default function Home() {
-  return <main></main>;
+  return <MainSection />;
 }
