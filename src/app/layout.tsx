@@ -3,7 +3,6 @@ import { Gothic_A1 } from "next/font/google";
 import "./globals.css";
 import "./styles/style.css";
 import { stack } from "../../styled-system/patterns/stack.mjs";
-import { ScrollProgressbar } from "@/components/ScrollProgressbar";
 
 const inter = Gothic_A1({ subsets: ["latin"], weight: "800", display: "swap" });
 
@@ -20,7 +19,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ScrollProgressbar />
         <main className={stack({ gap: "6", padding: "4" })}>{children}</main>
       </body>
     </html>

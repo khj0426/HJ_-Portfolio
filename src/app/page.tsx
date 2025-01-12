@@ -2,6 +2,7 @@ import { MainSection } from "@/components/MainSection";
 import { LinkArea } from "@/components/LinkArea";
 import { flex } from "../../styled-system/patterns";
 import { css } from "../../styled-system/css";
+import { Tabs } from "@/components/Tabs";
 
 export default function Home() {
   return (
@@ -51,6 +52,7 @@ export default function Home() {
         </p>
         <LinkArea />
       </section>
+      <Tabs />
     </>
   );
 }

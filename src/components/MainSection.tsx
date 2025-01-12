@@ -1,7 +1,6 @@
 import { cva, css } from "../../styled-system/css";
 import ProfileImage from "../../public/A0657048-C9C2-4E4B-9D4D-6AB73A3373C7_1_201_a.jpeg";
 import Image from "next/image";
-import { flex } from "../../styled-system/patterns";
 
 const main_section = cva({
   base: {
