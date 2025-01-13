@@ -6,7 +6,7 @@ const tabsRecipe = sva({
   base: {
     root: {
       margin: "5px auto",
-      width: ["100%", "50%"],
+      width: ["100%", "80%"],
       bg: "gray.50",
       shadow: "sm",
       rounded: "md",

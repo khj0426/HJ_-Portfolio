@@ -2,7 +2,7 @@ import { MainSection } from "@/components/MainSection";
 import { LinkArea } from "@/components/LinkArea";
 import { flex } from "../../styled-system/patterns";
 import { css } from "../../styled-system/css";
-import { Tabs } from "@/components/Tabs";
+import { CareerCard } from "@/components/CareerCard";
 
 export default function Home() {
   return (
@@ -51,8 +51,8 @@ export default function Home() {
           즐거움과, 깊이 학습하는 것의 중요성을 알고 있습니다.
         </p>
         <LinkArea />
+        <CareerCard />
       </section>
-      <Tabs />
     </>
   );
 }

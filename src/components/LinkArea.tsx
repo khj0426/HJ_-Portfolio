@@ -21,7 +21,8 @@ export const LinkArea = () => {
         className={css({
           display: "flex",
           justifyContent: "space-around",
-          my: "1.5",
+          alignItems: "center",
+          mt: "8",
         })}
       >
         <Link
